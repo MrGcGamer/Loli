@@ -1,0 +1,9 @@
+Package: com.mrgcgamer.loli
+Name: Loli
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: An OwOs0me iBr1ck tw3k!
+Maintainer: MrGcGamer
+Author: MrGcGamer
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
