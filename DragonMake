@@ -1,0 +1,39 @@
+name: Loli
+id: com.mrgcgamer.loli
+depends: mobilesubstrate, com.mrgcgamer.libgcuniversal
+architecture: iphoneos-arm
+description: An OwOs0me iBr1ck tw3k!
+version: 1.0.0
+author: MrGcGamer
+section: Tweaks
+
+all:
+  targetvers: 14.0
+
+Loli:
+  type: tweak
+  frameworks:
+    - UIKit
+    - MediaRemote
+    - MediaPlayer
+  libs:
+    - gcuniversal
+  filter:
+    executables:
+    - SpringBoard
+  prefix:
+    - "Headers/Base.h"
+  files:
+    - "Sources/*.x"
+    - "Sources/*.m"
+
+LoliPrefs:
+  type: prefs
+  dir: LoliPrefs
+  frameworks:
+    - UIKit
+    - Preferences
+  libs:
+    - gcuniversal
+  files:
+    - "*.m"

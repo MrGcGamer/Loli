@@ -4,20 +4,12 @@
 <dict>
 	<key>items</key>
 	<array>
-    <!-- <dict>
+		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>cellClass</key>
-			<string>LoliSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.mrgcgamer.loliprefs</string>
-			<key>key</key>
-			<string>ArtBackground</string>
+			<string>PSStaticTextCell</string>
 			<key>label</key>
-			<string>Artwork as Background</string>
-		</dict> -->
+			<string>Player Background Style</string>
+		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSSegmentCell</string>
@@ -50,9 +42,9 @@
 			<key>defaults</key>
 			<string>com.mrgcgamer.loliprefs</string>
 			<key>key</key>
-			<string>ColorButtons</string>
+			<string>ShouldColorButtons</string>
 			<key>label</key>
-			<string>Color Button</string>
+			<string>Color Buttons &amp; Labels</string>
 		</dict>
 	</array>
 </dict>

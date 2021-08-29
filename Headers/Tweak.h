@@ -1,14 +1,13 @@
-@import UIKit;
 #import "GcUniversal/HelperFunctions.h"
 #import "GcUniversal/GcImageUtils.h"
 #import "GcUniversal/GcColorUtils.h"
-#import "MediaRemote.h"
-#import "LibSymbolize.h"
+#import "MediaRemote/MediaRemote.h"
+#import "Headers/Loader.h"
+#import "Headers/Base.h"
 
 @interface UIView ()
 @property (nonatomic,retain) UIColor * interactionTintColor;
 - (UIViewController *)_viewControllerForAncestor;
--(void)_setInteractionTintColor:(id)arg1 ;
 @end
 
 @interface CSAdjunctItemView : UIView
@@ -16,11 +15,12 @@
 
 @interface MRUArtworkView : UIView
 @property (retain, nonatomic) UIImageView *artworkImageView;
+
+// NEW
+- (void)updateBackground ;
+- (UIView *)getPlatter ;
 @end
 
-@interface MRUNowPlayingView : UIView
-@property (nonatomic, assign) NSInteger context;
-@end
 @interface MRUNowPlayingHeaderView : UIView
 @property (nonatomic, assign) NSInteger context;
 @end
@@ -37,15 +37,10 @@
 @interface MRUNowPlayingTransportControlsView : UIView
 @property (assign,nonatomic) long long layout;
 @end
+@interface MRUTransportButton : UIButton
+- (void)updateVisualStyling ;
+@end
 
 @interface MTMaterialView : UIView
 @property (assign,nonatomic) long long recipe;
-@end
-
-@interface SBApplication : NSObject
-@property (nonatomic,readonly) NSString * bundleIdentifier;
-@end
-
-@interface SBMediaController : NSObject
-@property (nonatomic,readonly) SBApplication * nowPlayingApplication;
 @end

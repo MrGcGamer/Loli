@@ -22,7 +22,7 @@
 			<key>label</key>
 			<string>Settings</string>
 		</dict>
-		<dict>
+		<!-- <dict>
 			<key>cell</key>
 			<string>PSLinkCell</string>
 			<key>detail</key>
@@ -43,6 +43,48 @@
 			<string>Background</string>
 			<key>icon</key>
 			<string>Icons/MiscIcon.png</string>
+		</dict> -->
+		<dict>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>label</key>
+			<string>Player Background Style</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>com.mrgcgamer.loliprefs</string>
+			<key>key</key>
+			<string>ArtBackground</string>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Default</string>
+				<string>Artwork</string>
+				<string>Modern</string>
+			</array>
+		</dict>
+    <dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>LoliSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.mrgcgamer.loliprefs</string>
+			<key>key</key>
+			<string>ShouldColorButtons</string>
+			<key>label</key>
+			<string>Color Buttons &amp; Labels</string>
 		</dict>
 	</array>
 </dict>
