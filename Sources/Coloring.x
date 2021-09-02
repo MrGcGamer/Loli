@@ -44,7 +44,7 @@ LoliWrapper *loliWrapper;
 
 					NSInteger count = dominantColors.count;
 
-					BOOL isDark = [[dominantColors lastObject] isDarkColor];
+					BOOL isDark = [[dominantColors firstObject] isDarkColor];
 
 					loliWrapper.subtitleColor = (count >= 3) ? dominantColors[2] : (isDark) ? [UIColor whiteColor] : [UIColor blackColor];
 					loliWrapper.titleColor = (count >= 2) ? dominantColors[1] : (isDark) ? [UIColor whiteColor] : [UIColor blackColor];
